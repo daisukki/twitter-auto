@@ -45,7 +45,7 @@ def send_random_comment():
     send_button.click()
 
 search_field = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//input[@data-testid="SearchBox_Search_Input"]')))
-search_field.send_keys('#param')  
+search_field.send_keys('#$BTC')  #designed search here 
 search_field.send_keys(Keys.ENTER)
 
 time.sleep(4)
